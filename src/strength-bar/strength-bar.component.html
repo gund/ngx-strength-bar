@@ -1,0 +1,12 @@
+<ng-container *ngTemplateOutlet="customTemplate || defaultTemplate; context: templateCtx"></ng-container>
+<ng-template #defaultTemplate let-strength="strength" let-levels="levels" let-reachedLevels="reachedLevels">
+  <div class="level-name">{{ strength }}</div>
+  <div class="levels">
+    <div class="background">
+      <div *ngFor="let level of levels" class="level"></div>
+    </div>
+    <div class="foreground">
+      <div *ngFor="let level of reachedLevels" class="level"></div>
+    </div>
+  </div>
+</ng-template>
