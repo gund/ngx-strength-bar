@@ -18,6 +18,7 @@
     "cleancoverage": "rimraf coverage",
     "check-coverage": "istanbul check-coverage --functions 75 --lines 75 --branches 75 --statements 75",
     "ci": "npm run test:once && npm run check-coverage",
+    "ci:no-check-coverage": "npm run test:once",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
