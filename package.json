@@ -1,0 +1,105 @@
+{
+  "name": "ngx-strength-bar",
+  "version": "0.0.0-semantically-released",
+  "description": "Extendable strength bar for Angular",
+  "main": "dist/bundles/ngx-strength-bar.umd.js",
+  "module": "dist/bundles/ngx-strength-bar.es5.js",
+  "es2015": "dist/bundles/ngx-strength-bar.es2015.js",
+  "typings": "dist/ngx-strength-bar.d.ts",
+  "scripts": {
+    "commit": "git-cz",
+    "build": "node scripts/build.js",
+    "release": "node scripts/release.js",
+    "pretest": "npm run cleancoverage",
+    "test": "karma start",
+    "pretest:once": "npm run cleancoverage",
+    "test:once": "karma start",
+    "test:report": "cd coverage && codecov",
+    "cleancoverage": "rimraf coverage",
+    "check-coverage": "istanbul check-coverage --functions 75 --lines 75 --branches 75 --statements 75",
+    "ci": "npm run test:once && npm run check-coverage",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "keywords": [
+    "strength",
+    "bar",
+    "password",
+    "angular",
+    "angular2",
+    "angular4",
+    "ng",
+    "ngx"
+  ],
+  "author": "Alex Malkevich <malkevich.alex@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "^1.7.1"
+  },
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.0.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^4.3.4",
+    "@angular/compiler": "^4.3.4",
+    "@angular/compiler-cli": "^4.3.4",
+    "@angular/core": "^4.3.4",
+    "@angular/platform-browser": "^4.3.4",
+    "@angular/platform-browser-dynamic": "^4.3.4",
+    "@angular/platform-server": "^4.3.4",
+    "@angular/platform-webworker": "^4.3.4",
+    "@angular/platform-webworker-dynamic": "^4.3.4",
+    "@types/jasmine": "^2.5.43",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^3.1.2",
+    "codecov": "^2.1.0",
+    "codelyzer": "^3.1.2",
+    "commitizen": "^2.9.6",
+    "copyfiles": "^1.2.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "istanbul": "^0.4.5",
+    "jasmine-core": "^2.5.2",
+    "jasmine-spec-reporter": "^4.0.0",
+    "json-loader": "^0.5.4",
+    "karma": "^1.4.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.1.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.2",
+    "karma-remap-istanbul": "^0.6.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.2",
+    "ncp": "^2.0.0",
+    "npm-run-all": "^4.0.2",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.47.2",
+    "rollup-globals-regex": "^0.0.3",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rxjs": "^5.4.3",
+    "semantic-release": "^6.3.6",
+    "source-map": "^0.5.6",
+    "source-map-loader": "^0.2.0",
+    "sourcemap-istanbul-instrumenter-loader": "^0.2.0",
+    "tslint": "^5.6.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.4.2",
+    "uglify-js": "^3.0.27",
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1",
+    "zone.js": "^0.8.16"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gund/ngx-strength-bar.git"
+  }
+}
