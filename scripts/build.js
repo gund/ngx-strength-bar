@@ -14,7 +14,7 @@ const buildMain = `${NGC} -p tsconfig.es2015.json`
 const buildFesmEs2015 = `${ROLLUP} -c rollup.config.js`
 const buildFesmEs5 = `${TSC} -p tsconfig.es5.json`
 const buildUmd = `${ROLLUP} -c rollup.config.umd.js`
-const buildUmdMin = `${UGLIFYJS} -c --screw-ie8 --comments -o dist/bundles/ngx-renderer.umd.min.js dist/bundles/ngx-renderer.umd.js`
+const buildUmdMin = `${UGLIFYJS} -c --screw-ie8 --comments -o dist/bundles/ngx-strength-bar.umd.min.js dist/bundles/ngx-strength-bar.umd.js`
 const removeTmpFesmEs5 = `${RIMRAF} dist/bundles/es5`
 
 execP(cleanup)
@@ -34,7 +34,7 @@ execP(cleanup)
   .catch(e => console.error(e))
 
 function moveFesmEs5() {
-  fs.renameSync('dist/bundles/es5/ngx-renderer.es2015.js', 'dist/bundles/ngx-renderer.es5.js')
+  fs.renameSync('dist/bundles/es5/ngx-strength-bar.es2015.js', 'dist/bundles/ngx-strength-bar.es5.js')
 }
 
 function execP(string) {
