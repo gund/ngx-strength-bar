@@ -17,6 +17,10 @@
 $ npm install ngx-strength-bar --save
 ```
 
+## Attention
+
+This is still Work In Progress (WIP)
+
 ## Usage
 
 Import `StrengthBarModule` in your app module:
