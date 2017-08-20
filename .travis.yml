@@ -33,5 +33,5 @@ after_success:
   - python travis_after_all.py
   - export $(cat .to_export_back) &> /dev/null
   - yarn build && yarn release
-  - cd dist && yarn semantic-release
+  - yarn semantic-release
   - yarn test:report
