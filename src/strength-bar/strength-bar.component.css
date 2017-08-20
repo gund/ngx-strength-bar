@@ -3,8 +3,14 @@
 }
 
 .level {
+  flex: 1 1 auto;
+  margin-right: 1rem;
   height: 100%;
   background-color: lightgray;
+}
+
+.level:last-child {
+  margin-right: 0;
 }
 
 .background, .foreground {
@@ -33,4 +39,41 @@
 
 :host(.strength-strong) .foreground .level {
   background-color: green;
+}
+
+@supports (color: var(--primary)) {
+  :host {
+    --strength-bar-height: 5px;
+    --strength-bar-margin: 1rem;
+    --strength-bar-bg: lightgray;
+    --strength-bar-fg-default: grey;
+    --strength-bar-fg-weak: darkred;
+    --strength-bar-fg-medium: yellow;
+    --strength-bar-fg-strong: green;
+  }
+
+  .levels {
+    height: var(--strength-bar-height);
+  }
+
+  .level {
+    margin-right: var(--strength-bar-margin);
+    background-color: var(--strength-bar-bg);
+  }
+
+  .foreground .level {
+    background-color: var(--strength-bar-fg-default);
+  }
+
+  :host(.strength-weak) .foreground .level {
+    background-color: var(--strength-bar-fg-weak);
+  }
+
+  :host(.strength-medium) .foreground .level {
+    background-color: var(--strength-bar-fg-medium);
+  }
+
+  :host(.strength-strong) .foreground .level {
+    background-color: var(--strength-bar-fg-strong);
+  }
 }
