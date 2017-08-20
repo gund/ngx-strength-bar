@@ -24,8 +24,10 @@ before_install:
   - npm i -g yarn
 install:
   - yarn
+before_script: greenkeeper-lockfile-update
 script:
   - yarn ci:no-check-coverage
+after_script: greenkeeper-lockfile-upload
 after_success:
   - 'curl -Lo travis_after_all.py https://git.io/travis_after_all'
   - python travis_after_all.py
