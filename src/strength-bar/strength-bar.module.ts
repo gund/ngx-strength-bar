@@ -3,6 +3,9 @@ import { Inject, InjectionToken, ModuleWithProviders, NgModule, Optional, Self, 
 
 import {
   CheckerConfig,
+  CUSTOM_CONFIG,
+  CUSTOM_STRENGTH_CHECKERS,
+  CUSTOM_STRENGTH_LEVELS,
   getDefaultCheckers,
   getDefaultLevels,
   STRENGTH_CHECKERS,
@@ -14,6 +17,14 @@ import { StrengthBarComponent } from './strength-bar.component';
 import { StrengthService } from './strength/strength.service';
 
 const strengthBarModuleProvided = new InjectionToken<boolean>('StrengthBarModuleProvided');
+
+export function checkersFactory(config: CheckerConfig, overrideCheckers?: StrengthChecker[]) {
+  return overrideCheckers || getDefaultCheckers(config);
+}
+
+export function levelsFactory(config: CheckerConfig, overrideLevels?: StrengthLevels) {
+  return overrideLevels || getDefaultLevels(config);
+}
 
 @NgModule({
   imports: [CommonModule],
@@ -30,8 +41,19 @@ export class StrengthBarModule {
       ngModule: StrengthBarModule,
       providers: [
         { provide: strengthBarModuleProvided, useValue: true },
-        { provide: STRENGTH_CHECKERS, useValue: overrideCheckers || getDefaultCheckers(config) },
-        { provide: STRENGTH_LEVELS, useValue: overrideLevels || getDefaultLevels(config) },
+        { provide: CUSTOM_CONFIG, useValue: config },
+        { provide: CUSTOM_STRENGTH_CHECKERS, useValue: overrideCheckers },
+        { provide: CUSTOM_STRENGTH_LEVELS, useValue: overrideLevels },
+        {
+          provide: STRENGTH_CHECKERS,
+          useFactory: checkersFactory,
+          deps: [CUSTOM_CONFIG, CUSTOM_STRENGTH_CHECKERS]
+        },
+        {
+          provide: STRENGTH_LEVELS,
+          useFactory: levelsFactory,
+          deps: [CUSTOM_CONFIG, CUSTOM_STRENGTH_LEVELS]
+        },
         StrengthService,
       ]
     }

@@ -21,8 +21,11 @@ export interface DefaultCheckerConfig {
 
 export type CheckerConfig = Optional<DefaultCheckerConfig>;
 
+export const CUSTOM_CONFIG = new InjectionToken<CheckerConfig>('CUSTOM_CONFIG');
 export const STRENGTH_CHECKERS = new InjectionToken<StrengthChecker[]>('STRENGTH_CHECKERS');
+export const CUSTOM_STRENGTH_CHECKERS = new InjectionToken<StrengthChecker[]>('CUSTOM_STRENGTH_CHECKERS');
 export const STRENGTH_LEVELS = new InjectionToken<StrengthLevels>('STRENGTH_LEVELS');
+export const CUSTOM_STRENGTH_LEVELS = new InjectionToken<StrengthLevels>('CUSTOM_STRENGTH_LEVELS');
 
 const defaultCheckerConfig: DefaultCheckerConfig = {
   minLegth: 4,
