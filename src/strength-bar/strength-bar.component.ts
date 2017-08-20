@@ -57,10 +57,11 @@ export class StrengthBarComponent implements OnChanges {
     const oldStrength = this.strength;
 
     this.strength = this.strengthService.computeStrengthOf(this.string, this.extendCheckers, this.overrideCheckers);
-    this.reachedLevels = Array(
-      this.strengthService.strengthToBarScale(
-        this.strengthService.getLevel(this.strength), this.bars))
-      .fill(null);
+    const reachedBars = this.string
+      ? this.strengthService.strengthToBarScale(
+        this.strengthService.getLevel(this.strength), this.bars)
+      : 1;
+    this.reachedLevels = Array(reachedBars).fill(null);
 
     this.updateLevels();
     this.updateContext();
