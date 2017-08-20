@@ -17,8 +17,11 @@ export interface DefaultCheckerConfig {
   strongLevel?: number;
 }
 
+export const CUSTOM_CONFIG = new InjectionToken<DefaultCheckerConfig>('CUSTOM_CONFIG');
 export const STRENGTH_CHECKERS = new InjectionToken<StrengthChecker[]>('STRENGTH_CHECKERS');
+export const CUSTOM_STRENGTH_CHECKERS = new InjectionToken<StrengthChecker[]>('CUSTOM_STRENGTH_CHECKERS');
 export const STRENGTH_LEVELS = new InjectionToken<StrengthLevels>('STRENGTH_LEVELS');
+export const CUSTOM_STRENGTH_LEVELS = new InjectionToken<StrengthLevels>('CUSTOM_STRENGTH_LEVELS');
 
 const NUMBER_REGEXP = /\d+/;
 const MIN_LENGTH = 4;
