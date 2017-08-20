@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Inject, InjectionToken, ModuleWithProviders, NgModule, Optional, Self, SkipSelf } from '@angular/core';
 
 import {
-  DefaultCheckerConfig,
+  CheckerConfig,
   getDefaultCheckers,
   getDefaultLevels,
   STRENGTH_CHECKERS,
@@ -23,7 +23,7 @@ const strengthBarModuleProvided = new InjectionToken<boolean>('StrengthBarModule
 export class StrengthBarModule {
 
   static forRoot(
-    config?: DefaultCheckerConfig,
+    config?: CheckerConfig,
     overrideCheckers?: StrengthChecker[],
     overrideLevels?: StrengthLevels): ModuleWithProviders {
     return {
