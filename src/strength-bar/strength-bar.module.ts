@@ -2,10 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Inject, InjectionToken, ModuleWithProviders, NgModule, Optional, Self, SkipSelf } from '@angular/core';
 
 import {
-  CheckerConfig,
   CUSTOM_CONFIG,
   CUSTOM_STRENGTH_CHECKERS,
   CUSTOM_STRENGTH_LEVELS,
+  DefaultCheckerConfig,
   getDefaultCheckers,
   getDefaultLevels,
   STRENGTH_CHECKERS,
@@ -18,11 +18,11 @@ import { StrengthService } from './strength/strength.service';
 
 const strengthBarModuleProvided = new InjectionToken<boolean>('StrengthBarModuleProvided');
 
-export function checkersFactory(config: CheckerConfig, overrideCheckers?: StrengthChecker[]) {
+export function checkersFactory(config: DefaultCheckerConfig, overrideCheckers?: StrengthChecker[]) {
   return overrideCheckers || getDefaultCheckers(config);
 }
 
-export function levelsFactory(config: CheckerConfig, overrideLevels?: StrengthLevels) {
+export function levelsFactory(config: DefaultCheckerConfig, overrideLevels?: StrengthLevels) {
   return overrideLevels || getDefaultLevels(config);
 }
 
@@ -34,7 +34,7 @@ export function levelsFactory(config: CheckerConfig, overrideLevels?: StrengthLe
 export class StrengthBarModule {
 
   static forRoot(
-    config?: CheckerConfig,
+    config?: DefaultCheckerConfig,
     overrideCheckers?: StrengthChecker[],
     overrideLevels?: StrengthLevels): ModuleWithProviders {
     return {
