@@ -44,7 +44,9 @@ export class StrengthService {
   }
 
   strengthToBarScale(lvl: number, bars: number): number {
-    return Math.floor(lvl * bars);
+    const percent = lvl * bars;
+    const lastLevel = this.levels[this.levels.length - 1];
+    return percent >= lastLevel.lvl ? bars : Math.floor(percent);
   }
 
   private bakeLevels() {
@@ -77,8 +79,12 @@ export class StrengthService {
     return prevLvl;
   }
 
-  private getCheckers(extendCheckers: StrengthChecker[] = [], overrideCheckers: StrengthChecker[] = []): StrengthChecker[] {
-    return overrideCheckers.length > 0 ? overrideCheckers : [...this.defaultCheckers, ...extendCheckers];
+  private getCheckers(
+    extendCheckers: StrengthChecker[] = [],
+    overrideCheckers: StrengthChecker[] = []): StrengthChecker[] {
+    return overrideCheckers.length > 0
+      ? overrideCheckers
+      : [...this.defaultCheckers, ...extendCheckers];
   }
 
 }
