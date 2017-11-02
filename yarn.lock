@@ -957,9 +957,9 @@ codecov@^2.1.0:
     request "2.81.0"
     urlgrey "0.4.4"
 
-codelyzer@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/codelyzer/-/codelyzer-3.1.2.tgz#9ff1f041fb9b5ee5dbeb45ba866dfaf04983af04"
+codelyzer@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/codelyzer/-/codelyzer-4.0.0.tgz#1a684364a0f20dc14c43df155980fce9c6390304"
   dependencies:
     app-root-path "^2.0.1"
     css-selector-tokenizer "^0.7.0"
@@ -4494,7 +4494,7 @@ raw-body@~2.2.0:
     iconv-lite "0.4.15"
     unpipe "1.0.0"
 
-raw-loader@1.0.0-beta.0:
+raw-loader@^1.0.0-beta.0:
   version "1.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0-beta.0.tgz#617853ce8314d1166c06758d9302d24faf08d44c"
 
