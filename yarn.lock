@@ -16,9 +16,9 @@
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@^4.3.4":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.3.4.tgz#9b16ae785f22b918aa168db0555c05304baf9d77"
+"@angular/compiler@5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.0.4.tgz#7baf38945703a4cab9128d71eb3c8e38c13be1a4"
   dependencies:
     tslib "^1.7.1"
 
@@ -4494,7 +4494,7 @@ raw-body@~2.2.0:
     iconv-lite "0.4.15"
     unpipe "1.0.0"
 
-raw-loader@1.0.0-beta.0:
+raw-loader@^1.0.0-beta.0:
   version "1.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0-beta.0.tgz#617853ce8314d1166c06758d9302d24faf08d44c"
 
