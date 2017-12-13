@@ -8,13 +8,14 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/compiler-cli@^4.3.4":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.3.4.tgz#3d16ec869c39f4aca18cac71dcf118a80f6208e6"
+"@angular/compiler-cli@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-5.1.1.tgz#579e6846ed493e7202e36eb5cea00cb1a61c927c"
   dependencies:
-    "@angular/tsc-wrapped" "4.3.4"
+    chokidar "^1.4.2"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
+    tsickle "^0.25.5"
 
 "@angular/compiler@^4.3.4":
   version "4.3.4"
@@ -59,12 +60,6 @@
   resolved "https://registry.yarnpkg.com/@angular/platform-webworker/-/platform-webworker-4.3.4.tgz#d0b5cf15ff8abe4cd12ca36b6da091fb5fdde9d6"
   dependencies:
     tslib "^1.7.1"
-
-"@angular/tsc-wrapped@4.3.4":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.3.4.tgz#86c14cec0ee7f25bb7a7f80270bffe19fe7acd63"
-  dependencies:
-    tsickle "^0.21.0"
 
 "@semantic-release/commit-analyzer@^3.0.1":
   version "3.0.6"
@@ -868,7 +863,7 @@ change-case@2.3.x:
     upper-case "^1.1.1"
     upper-case-first "^1.1.0"
 
-chokidar@^1.4.1, chokidar@^1.6.0, chokidar@^1.7.0:
+chokidar@^1.4.1, chokidar@^1.4.2, chokidar@^1.6.0, chokidar@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
   dependencies:
@@ -4494,7 +4489,7 @@ raw-body@~2.2.0:
     iconv-lite "0.4.15"
     unpipe "1.0.0"
 
-raw-loader@1.0.0-beta.0:
+raw-loader@^1.0.0-beta.0:
   version "1.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0-beta.0.tgz#617853ce8314d1166c06758d9302d24faf08d44c"
 
@@ -5604,9 +5599,9 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
-tsickle@^0.21.0:
-  version "0.21.6"
-  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.21.6.tgz#53b01b979c5c13fdb13afb3fb958177e5991588d"
+tsickle@^0.25.5:
+  version "0.25.5"
+  resolved "https://registry.yarnpkg.com/tsickle/-/tsickle-0.25.5.tgz#2891d29f97c4aab1306e06378d8496d1765a4bfe"
   dependencies:
     minimist "^1.2.0"
     mkdirp "^0.5.1"
