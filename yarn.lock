@@ -48,9 +48,9 @@
     tslib "^1.7.1"
     xhr2 "^0.1.4"
 
-"@angular/platform-webworker-dynamic@^4.3.4":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@angular/platform-webworker-dynamic/-/platform-webworker-dynamic-4.3.4.tgz#c7f300f14346381040e4485bd33da481c21f758b"
+"@angular/platform-webworker-dynamic@5.2.9":
+  version "5.2.9"
+  resolved "https://registry.yarnpkg.com/@angular/platform-webworker-dynamic/-/platform-webworker-dynamic-5.2.9.tgz#9bcfaa2324ac1c1bcebed2e10b094ce857540dda"
   dependencies:
     tslib "^1.7.1"
 
@@ -4494,7 +4494,7 @@ raw-body@~2.2.0:
     iconv-lite "0.4.15"
     unpipe "1.0.0"
 
-raw-loader@1.0.0-beta.0:
+raw-loader@^1.0.0-beta.0:
   version "1.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0-beta.0.tgz#617853ce8314d1166c06758d9302d24faf08d44c"
 
