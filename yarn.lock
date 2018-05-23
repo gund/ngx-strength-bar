@@ -54,11 +54,11 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/platform-webworker@^4.3.4":
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/@angular/platform-webworker/-/platform-webworker-4.3.4.tgz#d0b5cf15ff8abe4cd12ca36b6da091fb5fdde9d6"
+"@angular/platform-webworker@6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/platform-webworker/-/platform-webworker-6.0.3.tgz#fa25c8e82c14067a0a98065f054f74db5c573b76"
   dependencies:
-    tslib "^1.7.1"
+    tslib "^1.9.0"
 
 "@angular/tsc-wrapped@4.3.4":
   version "4.3.4"
@@ -4494,7 +4494,7 @@ raw-body@~2.2.0:
     iconv-lite "0.4.15"
     unpipe "1.0.0"
 
-raw-loader@1.0.0-beta.0:
+raw-loader@^1.0.0-beta.0:
   version "1.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0-beta.0.tgz#617853ce8314d1166c06758d9302d24faf08d44c"
 
@@ -5616,6 +5616,10 @@ tsickle@^0.21.0:
 tslib@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.7.1.tgz#bc8004164691923a79fe8378bbeb3da2017538ec"
+
+tslib@^1.9.0:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.1.tgz#a5d1f0532a49221c87755cfcc89ca37197242ba7"
 
 tslint-loader@^3.5.3:
   version "3.5.3"
