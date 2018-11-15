@@ -3213,9 +3213,9 @@ karma-coverage-istanbul-reporter@^1.1.0:
     istanbul-api "^1.1.8"
     minimatch "^3.0.4"
 
-karma-jasmine@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/karma-jasmine/-/karma-jasmine-1.1.0.tgz#22e4c06bf9a182e5294d1f705e3733811b810acf"
+karma-jasmine@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/karma-jasmine/-/karma-jasmine-2.0.0.tgz#07f688a18c679a07983acd3a2e3973c51aa4e0c7"
 
 karma-mocha-reporter@^2.2.2:
   version "2.2.3"
@@ -4494,7 +4494,7 @@ raw-body@~2.2.0:
     iconv-lite "0.4.15"
     unpipe "1.0.0"
 
-raw-loader@1.0.0-beta.0:
+raw-loader@^1.0.0-beta.0:
   version "1.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-1.0.0-beta.0.tgz#617853ce8314d1166c06758d9302d24faf08d44c"
 
