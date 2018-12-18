@@ -50,7 +50,7 @@
     "@angular/platform-server": "^4.3.4",
     "@angular/platform-webworker": "^4.3.4",
     "@angular/platform-webworker-dynamic": "^4.3.4",
-    "@types/jasmine": "^2.5.43",
+    "@types/jasmine": "^3.3.3",
     "angular2-inline-template-style": "^1.1.0",
     "angular2-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^3.1.2",
