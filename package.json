@@ -57,7 +57,7 @@
     "codecov": "^2.1.0",
     "codelyzer": "^3.1.2",
     "commitizen": "^2.9.6",
-    "copyfiles": "^1.2.0",
+    "copyfiles": "^2.1.1",
     "cz-conventional-changelog": "^2.0.0",
     "greenkeeper-lockfile": "^1.8.1",
     "istanbul": "^0.4.5",
